@@ -28,14 +28,14 @@ function userPrompts() {
             name: "shapeColor",
         }
     ])
-    .then(answers) => {
+    .then((answers) => {
         if(answers.text.length > 3) {
             console.log("Text length limited to 3 characters.");
             prompt();
         } else {
             writeToFile("logo.svg", answers);
-        }
-    }
+        };
+    });
 };
 
 function createSvgFile () {
@@ -54,7 +54,7 @@ function createSvgFile () {
     } else {
         shapeChoice = new Square();
         svg += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeColor}"/>`;
-    }
+    };
 
     svg += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
     svg += "</g>";
