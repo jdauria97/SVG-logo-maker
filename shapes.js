@@ -26,3 +26,5 @@ class Square extends Shape {
 };
 
 module.exports = {Triangle, Circle, Square};
+
+prompt();

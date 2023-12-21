@@ -33,7 +33,7 @@ function userPrompts() {
             console.log("Text length limited to 3 characters.");
             prompt();
         } else {
-            writeToFile("logo.svg", answers);
+            createSvgFile("logo.svg", answers);
         };
     });
 };
