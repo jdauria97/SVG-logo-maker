@@ -29,3 +29,7 @@ function userPrompts() {
         }
     ])
 };
+
+function createSvgFile () {
+
+};
