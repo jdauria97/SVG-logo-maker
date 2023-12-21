@@ -64,3 +64,5 @@ function createSvgFile () {
         err ? console.log(err) : console.log("Generated logo.svg");
       });
 };
+
+prompt();
