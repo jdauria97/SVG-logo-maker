@@ -38,7 +38,7 @@ function userPrompts() {
     });
 };
 
-function createSvgFile () {
+function createSvgFile (fileName, answers) {
     let svg = "";
     svg = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
     svg += "<g>";
@@ -60,7 +60,7 @@ function createSvgFile () {
     svg += "</g>";
     svg += "</svg>";
 
-    fs.writeFile(fileName, svgString, (err) => {
+    fs.writeFile(fileName, svg, (err) => {
         err ? console.log(err) : console.log("Generated logo.svg");
       });
 };
