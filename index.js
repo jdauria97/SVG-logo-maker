@@ -9,7 +9,7 @@ function userPrompts() {
         {
             type: "input",
             message: "Enter logo text, up to 3 characters.",
-            name: text,
+            name: "text",
         },
         {
             type: "input",
@@ -65,4 +65,4 @@ function createSvgFile () {
       });
 };
 
-prompt();
+userPrompts();
