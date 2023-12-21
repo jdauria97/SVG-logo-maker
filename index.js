@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const {Triangle, Circle, Square} = require("./shapes");
 
-function createSVG() {
+function userPrompts() {
     inquirer
     .prompt([
         {
